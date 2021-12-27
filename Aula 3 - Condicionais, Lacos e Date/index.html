@@ -1,0 +1,105 @@
+<!--
+As condicionais são o fundamento lógico de um sistema e da vida como um todo. Ou seja, é normal falar para uma pessoa: SE tal coisa acontecer FAÇA, SENÃO FAÇA isso. E em Js expressamos isso com as condicionais If, Else e Else If.
+
+Código de Exemplo: 
+
+var idade = 18;
+if (idade >= 18) {
+    alert("maior de idade")
+}else{
+    alert("menor de idade")
+}
+
+O Else If será usado quando for necessário adicionar mais uma orientação, já que o Else "sozinho" ele apenas faz algo se a condição NÃO FOR cumprida. 
+
+Código de Exemplo:
+
+var idade = 18;
+if (idade >= 18) {
+    alert("maior de idade")
+}else if (idade < 18 & idade >= 16) {
+    alert("falta pouco")
+}else{
+    alert("menor de idade")
+}
+
+O comando prompt() é usado para usar uma Caixa de Diálogo que "pergunta" algo para o usuário
+
+Código de Exemplo:
+
+var idade = prompt("Qual a sua idade?"); //nesse momento idade recebe o que o usuário informar, supondo que seja 18. Vai ser o mesmo que escrever : var idade = 18;
+if (idade >= 18) {
+    alert("maior de idade")
+}else if (idade < 18 & idade >= 16) {
+    alert("falta pouco")
+}else{
+    alert("menor de idade")
+}
+
+
+Os laços de repetição como o While e o For servem para fazer algo enquanto determinada condição não foi atingida.
+
+Sintaxe (While):
+
+while (condição) {
+  rotina
+}
+
+Código de Exemplo:
+
+var n = 0;
+var x = 0;
+
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+
+
+Sintaxe (For):
+
+for ([inicialização]; [condição]; [expressão final])
+   declaração
+
+Código de Exemplo:
+
+for (var i = 0; i < 9; i++) {
+   console.log(i);
+   // more statements
+}
+
+
+Sendo assim, as diferenças entre WHILE e FOR são o While executa o programa ENQUANTO ele for verdadeiro e o para ATÉ ele se tornar verdeiro (ou atingir a condição requerida)
+
+
+Para o Date, podemos cria uma instância JavaScript de Date que representa um único momento no tempo. Objetos Date são baseados no valor de tempo que é o número de milisegundos desde 1º de Janeiro de 1970 (UTC). Com o Construtor: 
+
+new Date();
+new Date(valor);
+new Date(dataString);
+new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
+
+
+
+Fonte:
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+https://developer.mozilla.org/pt-BR/docs/Web/API/window/prompt
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/while
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minha página</title>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <p>Hello World!</p>
+    </body>
+</html>

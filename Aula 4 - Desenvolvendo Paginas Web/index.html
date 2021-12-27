@@ -1,0 +1,37 @@
+<!--
+
+É possível manipular elementos da página com Js. Por exemplo, criando Botões.
+
+Para criar botões, por exemplo. Iremos criar o elemento no HTLM e fazer uma função , por exemplo a : onclick.
+
+Dentro da Onclick manipulamos elementos, desde caixa de alerta até Tags. Para usar com recursos nativos do HTML usamos o "document.getElementById()"
+
+
+Podemos também abrir outras páginas ao clicar e ao passar o mouse por cima. Trazendo dinamismo e agilidade.
+
+
+A Função onmouseover serve para quando passar o mouse por cima do objeto acontecer alguma ação.
+
+
+Fonte:
+
+https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events
+https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction
+https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minha página</title>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar()">Passe o mouse aqui</p>
+    </body>
+</html>
